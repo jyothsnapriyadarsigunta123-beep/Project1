@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Placement Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Placement Management System</h1>
+        <p>Student Registration and Placement Eligibility</p>
+    </header>
+
+    <div class="container">
+
+        <h2>Add Student</h2>
+
+        <form id="studentForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Student Name"
+                required
+            >
+
+            <input
+                type="number"
+                id="cgpa"
+                step="0.01"
+                placeholder="CGPA"
+                required
+            >
+
+            <input
+                type="text"
+                id="role"
+                placeholder="Target Role"
+                required
+            >
+
+            <input
+                type="text"
+                id="project"
+                placeholder="Project"
+                required
+            >
+
+            <input
+                type="text"
+                id="skills"
+                placeholder="Skills (Python Java HTML)"
+                required
+            >
+
+            <button type="submit">
+                Add Student
+            </button>
+
+        </form>
+
+
+        <h2>Student Report</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>CGPA</th>
+                    <th>Role</th>
+                    <th>Project</th>
+                    <th>Skills</th>
+                    <th>Eligibility</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentTable">
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
